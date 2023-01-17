@@ -2,4 +2,4 @@
 
 Classic game created using HTML, CSS &amp; JavaScript
 
-test commit
+Credit to: https://www.youtube.com/watch?v=oZrp3Atkz18

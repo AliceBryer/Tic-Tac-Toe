@@ -16,7 +16,7 @@ font-family: 'Sofia Sans', sans-serif; */
   --charcoal: #233d4dff;
   --sunglow: #fcca46ff;
   --moveTaken: white;
-  --winning-blocks: rgb(51, 211, 51);
+  --winning-blocks: rgba(25, 128, 192, 0.279);
 }
 
 body {

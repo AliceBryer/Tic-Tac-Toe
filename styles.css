@@ -1,0 +1,82 @@
+/* font-family: 'Heebo', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poiret One', cursive;
+font-family: 
+font-family: 'Roboto', sans-serif;
+font-family: 'Sofia Sans', sans-serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --charcoal: #233d4dff;
+  --pumpkin: #fe7f2dff;
+  --sunglow: #fcca46ff;
+  --moveTaken: white;
+  --winning-blocks: rgb(51, 211, 51);
+}
+
+body {
+  background-color: var(--charcoal);
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  color: var(--sunglow);
+  font-size: 3rem;
+  letter-spacing: 1rem;
+}
+
+.container {
+  padding: 40px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#gameboard {
+  width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--sunglow);
+  font-size: 120px;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+}
+
+.box.box:nth-child(3n) {
+  border-right: none;
+}
+
+.box:nth-child(6) ~ .box {
+  border-bottom: none;
+}
+
+button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--pumpkin);
+  color: var(--charcoal);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+button:hover {
+  cursor: pointer;
+}

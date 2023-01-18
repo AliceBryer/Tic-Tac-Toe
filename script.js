@@ -1,3 +1,18 @@
+// modal functionality
+var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function () {
+  modal.style.display = "none";
+};
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+
+// game functionality
+
 let playerText = document.getElementById("playerText");
 let restartBtn = document.getElementById("restartBtn");
 let boxes = Array.from(document.getElementsByClassName("box"));

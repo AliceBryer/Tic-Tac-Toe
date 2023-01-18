@@ -15,11 +15,29 @@
     <title>Tic Tac Toe</title>
   </head>
   <body>
-    <div class="container">
-      <h1 id="playerText">TIC TAC TOE</h1>
-      <button id="restartBtn">Restart Game</button>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>
+          Welcome to TIC TAC TOE <br />
+          The aim of the game is to get 3 in a row!<br />
+          Player 1 is X & player 2 is O - choose now & start playing! <br />
+          Player 1 will automatically go first followed by alternating turns.
+        </p>
+      </div>
+    </div>
+    <h1 id="playerText">TIC TAC TOE</h1>
+    <div class="content-container">
+      <div class="scoring">
+        <h2>SCORES</h2>
 
-      <div class="container">
+        <h4>Player 1: 0</h4>
+        <h4>Player 2: 0</h4>
+
+        <button id="restartBtn">Restart Game</button>
+      </div>
+
+      <div class="game-container">
         <div id="gameboard">
           <div class="box" id="0"></div>
           <div class="box" id="1"></div>
